@@ -48,10 +48,42 @@ document.getElementById("app").innerHTML = `
 
 // arrow3(82, 1.82);
 
-//スプレッド構文
-const array1 = [100, 200, 300];
-const array2 = [400, 500, 600];
+// スプレッド構文;
+// const array1 = [100, 200, 300];
+// const array2 = [400, 500, 600];
 
-const array3 = [...array1, ...array2];
+// const array3 = [...array1, ...array2];
 
-console.log(array3);
+// console.log(array3);
+
+// map, filter;
+
+const nameArr = ["kawakita", "yamada", "sato"];
+// 従来;
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index}番目は${nameArr[index]}です`);
+// }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+// nameArr.map((name,index) => console.log(`${index　+　1}番目は${name}です`));
+//第二引数に番号が振られる
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+
+// console.log(newNumArr);
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "kawakita") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameArr);
