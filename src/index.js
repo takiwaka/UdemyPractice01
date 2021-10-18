@@ -31,6 +31,19 @@ document.getElementById("app").innerHTML = `
 
 // アロー関数
 
-const arrow = () => console.log("アロー関数");
+const arrow1 = () => console.log("アロー関数は１行の場合returnを省略できる");
 
-arrow();
+arrow1();
+
+const arrow2 = () => {
+  return console.log("アロー関数2");
+};
+
+arrow2();
+
+const arrow3 = (weight, height) => {
+  const bmi = Math.floor(weight / height ** 2);
+  return console.log(`私ののBMIは${bmi}です`);
+};
+
+arrow3(82, 1.82);
