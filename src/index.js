@@ -5,3 +5,7 @@ document.getElementById("app").innerHTML = `
 `;
 
 console.log("test");
+
+var test1 = "varは再宣言、再代入可能";
+
+console.log(test1);
